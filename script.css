@@ -280,54 +280,32 @@ nav {
   text-shadow: 0 0 10px #BF00FF;
 }
 
-/* Hamburger icon */
-.hamburger {
-  display: none;
-  font-size: 1.6rem;
+nav {
+  background: #0A0A0A;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  box-shadow: 0 0 20px #BF00FF;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  list-style: none;
+}
+
+.menu li a {
   color: #BF00FF;
-  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
 }
-@media (max-width: 768px) {
-  .hamburger {
-    display: block;
-  }
 
-  /* Hide menu initially */
-  .menu {
-    display: none;
-    position: absolute;
-    top: 70px;
-    left: 0;
-    right: 0;
-    background: #0A0A0A;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    padding: 20px 0;
-    box-shadow: 0 5px 20px #BF00FF;
-    z-index: 998;
-  }
-
-  /* Show menu when active */
-  .menu.active {
-    display: flex;
-  }
-
-  .nav-container {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .logo {
-    font-size: 1.3rem;
-  }
-
-  .menu li a {
-    font-size: 1rem;
-    padding: 10px 0;
-  }
-
-  .hero {
-    margin-top: 160px; /* for space under fixed nav */
-  }
+.menu li a:hover {
+  color: #D100D1;
+  text-shadow: 0 0 10px #BF00FF;
 }
+
