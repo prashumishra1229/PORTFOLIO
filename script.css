@@ -308,15 +308,3 @@ nav {
   color: #D100D1;
   text-shadow: 0 0 10px #BF00FF;
 }
-@media (max-width: 768px) {
-  .menu {
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-    padding-top: 10px;
-  }
-}
-.hero {
-  margin-top: 100px; /* adjust as needed */
-}
-
