@@ -308,3 +308,115 @@ nav {
   color: #D100D1;
   text-shadow: 0 0 10px #BF00FF;
 }
+/* Ensure responsiveness starts clean */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Make image responsive */
+.profile-pic {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Responsive navigation menu */
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.menu li a {
+  color: #BF00FF;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+/* Social icons */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Section spacing */
+section {
+  padding: 40px 20px;
+  margin: 20px auto;
+  max-width: 1000px;
+}
+
+/* Glass card style (if used) */
+.glass-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 30px rgba(191, 0, 255, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  margin: 20px;
+}
+
+/* Typography */
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 10px;
+  color: #ccc;
+}
+
+/* Responsive layout for small devices */
+@media screen and (max-width: 768px) {
+  nav {
+    padding: 10px;
+  }
+
+  .menu {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+
+  .profile-pic {
+    width: 130px;
+    height: 130px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .subtitle {
+    font-size: 0.9rem;
+  }
+
+  section {
+    padding: 30px 15px;
+  }
+
+  .glass-card {
+    margin: 15px;
+    padding: 15px;
+  }
+
+  .contact-list li {
+    font-size: 0.95rem;
+    margin: 10px 0;
+    word-wrap: break-word;
+  }
+
+  .social-icons {
+    gap: 15px;
+  }
+}
