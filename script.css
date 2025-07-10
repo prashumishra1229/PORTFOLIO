@@ -308,3 +308,58 @@ nav {
   color: #D100D1;
   text-shadow: 0 0 10px #BF00FF;
 }
+/* Base Nav Styling Cleanup */
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #BF00FF;
+  text-shadow: 0 0 10px #BF00FF;
+}
+
+.hamburger {
+  display: none;
+  font-size: 1.8rem;
+  color: #BF00FF;
+  cursor: pointer;
+}
+
+/* Responsive Menu */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+    z-index: 1001;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background: #0A0A0A;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    padding: 20px 0;
+    border-top: 1px solid #BF00FF;
+    box-shadow: 0 5px 20px rgba(191, 0, 255, 0.3);
+    z-index: 1000;
+  }
+
+  .menu.show {
+    display: flex;
+  }
+
+  .menu li a {
+    font-size: 1.1rem;
+  }
+}

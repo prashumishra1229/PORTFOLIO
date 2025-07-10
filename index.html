@@ -13,14 +13,24 @@
 <body>
   <header>
     <nav>
-      <ul class="menu">
-        <li><a href="#about">About</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#contact">Contact Me</a></li>
-      </ul>
-    </nav>
+  <div class="nav-container">
+    <div class="logo">Prashu</div>
+
+    <!-- Hamburger icon -->
+    <div class="hamburger" id="hamburger">
+      <i class="fas fa-bars"></i>
+    </div>
+
+    <!-- Navigation Menu -->
+    <ul class="menu" id="nav-menu">
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact Me</a></li>
+    </ul>
+  </div>
+</nav>
 
 
   </header>
@@ -109,6 +119,19 @@
 
     <p class="copyright">© An Official portfolio of Ms. Prashu Mishra. Thank You for Connecting.</p>
   </footer>
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const navMenu = document.getElementById('nav-menu');
+
+  hamburger.addEventListener('click', () => {
+    navMenu.classList.toggle('show');
+  });
+
+  // Optional: Close menu when link is clicked
+  document.querySelectorAll('.menu a').forEach(link =>
+    link.addEventListener('click', () => navMenu.classList.remove('show'))
+  );
+</script>
 
 </body>
 
