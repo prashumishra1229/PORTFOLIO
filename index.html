@@ -13,15 +13,24 @@
 <body>
   <header>
     <nav>
-      <ul class="menu">
-        <li><a href="#about">About</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#contact">Contact Me</a></li>
-      </ul>
-    </nav>
+      <div class="nav-container">
+        <div class="logo">Prashu</div>
 
+        <!-- Hamburger Button -->
+        <div class="hamburger" id="hamburger">
+          <i class="fas fa-bars"></i>
+        </div>
+
+        <!-- Navigation Menu -->
+        <ul class="menu" id="menu">
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact Me</a></li>
+        </ul>
+      </div>
+    </nav>
 
   </header>
 
@@ -92,23 +101,36 @@
     <ul class="contact-list">
       <li><i class="fas fa-envelope"></i> <a href="mailto:prashumishra714@gmail.com">prashumishra714@gmail.com</a></li>
       <li><i class="fas fa-phone-alt"></i> +91-9304726898</li>
-      <li><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/yourprofile"target="_blank">www.linkedin.com/in/12pm06akt29</a></li>
+      <li><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/yourprofile"
+          target="_blank">www.linkedin.com/in/12pm06akt29</a></li>
       <li><i class="fab fa-github"></i> <a href="https://github.com/yourusername" target="_blank">prashumishra1229</a>
       </li>
     </ul>
   </section>
   <footer>
     <div class="social-icons">
-      <a href="https://linkedin.com/in/12pm06akt29" class="icon linkedin" target="_blank"> <i class="fab fa-linkedin-in"></i></a>
-      <a href="https://github.com/prashumishra1229" class="icon github" target="_blank"><i class="fab fa-github"></i></a>
-      <a href="https://instagram.com/prashu_mishra12" class="icon instagram" target="_blank"><i class="fab fa-instagram"></i></a>
-      <a href="https://twitter.com/prashu_mis37320" class="icon twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://linkedin.com/in/12pm06akt29" class="icon linkedin" target="_blank"> <i
+          class="fab fa-linkedin-in"></i></a>
+      <a href="https://github.com/prashumishra1229" class="icon github" target="_blank"><i
+          class="fab fa-github"></i></a>
+      <a href="https://instagram.com/prashu_mishra12" class="icon instagram" target="_blank"><i
+          class="fab fa-instagram"></i></a>
+      <a href="https://twitter.com/prashu_mis37320" class="icon twitter" target="_blank"><i
+          class="fab fa-twitter"></i></a>
       <a href="mailto:prashumishra714@gmail.com" class="icon gmail"><i class="fas fa-envelope"></i></a>
     </div>
 
 
     <p class="copyright">© An Official portfolio of Ms. Prashu Mishra. Thank You for Connecting.</p>
   </footer>
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const menu = document.getElementById('menu');
+
+    hamburger.addEventListener('click', () => {
+      menu.classList.toggle('show');
+    });
+  </script>
 
 </body>
 
